@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="task-2.js"></script>
+  <title>Dynamic Element Addition</title>
+  <style>
+    .added-element {
+      margin-bottom: 10px;
+    }
+
+    .edit-delete-buttons {
+      margin-left: 10px;
+    }
+
+    .edit-controls {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dynamic Element Addition</h1>
+
+  <label for="element">Select Element:</label>
+  <select id="element-select">
+    <option value="h1">H1</option>
+    <option value="p">P</option>
+    <option value="div">Div</option>
+  </select>
+  <br><br>
+
+  <label for="color">Select Color:</label>
+  <input type="color" id="element-color" value="#000000">
+  <br><br>
+
+  <label for="text">Enter Text:</label>
+  <textarea id="element-text" rows="4" cols="50" placeholder="Enter text for the element"></textarea>
+  <br><br>
+
+  <button onclick="addElement()">Add</button>
+
+  <div id="elementContainer"></div>
+
+  <div id="editContainer" class="edit-controls">
+    <label for="editText">Edit Text:</label>
+    <textarea id="editText" rows="4" cols="50"></textarea>
+    <br><br>
+    <label for="editColor">Edit Color:</label>
+    <input type="color" id="editColor" name="editColor">
+    <br><br>
+    <button id="updateButton">Update</button>
+  </div>
+
+</body>
+
+</html>
