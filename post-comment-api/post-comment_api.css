@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.post {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.post h2 {
+  margin-top: 20px;
+}
+
+.comment-heading{
+  color: blue;
+  font-size: larger;
+}
+
+.comment {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: small;
+}
+
+.username {
+  font-weight: bold;
+  font-size: larger;
+  color: #dd0000;
+}
+
+/* Add more styles as needed */
